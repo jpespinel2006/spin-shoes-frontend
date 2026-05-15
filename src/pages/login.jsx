@@ -33,7 +33,6 @@ export default function Login() {
   return (
     <div className="login-bg">
 
-      {/* Decorative grid lines */}
       <svg
         style={{ position: "absolute", inset: 0, width: "100%", height: "100%", opacity: 0.04, pointerEvents: "none" }}
         xmlns="http://www.w3.org/2000/svg"
@@ -48,7 +47,6 @@ export default function Login() {
 
       <div className="login-card animate-fade-up">
 
-        {/* Logo */}
         <div style={{ textAlign: "center", marginBottom: 32 }}>
           <div style={{
             width: 56, height: 56,
@@ -65,7 +63,6 @@ export default function Login() {
           <div className="login-tagline">Sistema de Gestión de Pedidos</div>
         </div>
 
-        {/* Fields */}
         <label className="login-label">Correo electrónico</label>
         <div className="login-input-wrap">
           <span className="login-input-icon">✉</span>
@@ -99,15 +96,6 @@ export default function Login() {
           style={{ marginTop: 24, opacity: loading ? 0.7 : 1 }}
         >
           {loading ? "Ingresando..." : "Iniciar Sesión →"}
-        </button>
-
-        <div className="login-divider"><span>o</span></div>
-
-        <button
-          onClick={() => navigate("/register")}
-          className="login-btn-outline"
-        >
-          Crear cuenta nueva
         </button>
 
         <p style={{ textAlign: "center", fontSize: "0.72rem", color: "rgba(255,255,255,0.2)", marginTop: 28 }}>
